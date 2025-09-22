@@ -2,21 +2,24 @@ body {
     background-image: url(background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    font-family: 'SourceSansBold', Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 @font-face {
-    font-family: "MyCustomFont";
-    src: url("E:\Fonts\arial") format(truetype);
+    font-family: 'SourceSansBold';
+    src: url("source-sans-pro.bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
 }
 
-.backgroundH1 {
+.backgroundH2 {
     width: 70%;
     margin: 20px auto;
     text-align: center;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'SourceSansBold', Arial, sans-serif;
     font-size: 10vw;
     white-space: nowrap;
 }
@@ -27,4 +30,84 @@ body {
     height: auto;
     padding-top: 15px;
     margin-left: 20px;
+}
+
+nav ul {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    float: right;
+}
+
+nav ul li a {
+    color: white;
+    text-align: center;
+    padding: 2px;
+    margin-right: 10px;
+    margin-top: 0px;
+    text-decoration: none;
+    font-family: url("source-sans-pro.bold.ttf");
+    font-size: 8px;
+}
+
+nav ul li a:hover {
+    color: yellow;
+}
+
+nav ul li a:active {
+    color: red;
+}
+
+div ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+div ul li {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 6px;
+    margin: 1px;
+    font-size: 12px;
+}
+
+.big-btn {
+    padding: 5px 7px;
+    margin: 2px auto;
+    font-size: 7px;
+    background-color: #C271FF;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    display: block;
+    min-width: 50px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: url("source-sans-pro.bold.ttf");
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
+}
+
+.big-btn:hover {
+    background-color: #9b4bcc;
+}
+
+.learn {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin: 65px;
+}
+
+.learn1 {
+    color: #C271FF;
 }
